@@ -6,8 +6,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Fanto</title>
 	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+		integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 
@@ -191,48 +193,67 @@
 
 		</section>
 
+		<section id="newsletter">
+			<h1>Cadastre-se e garanta 10% de desconto em sua primeira compra!</h1>
+			<form action="#">
+				<section class="formfield-row" id="newsletter-campos">
+					<div class="formfield">
+						<label for="newsletter-nome">Seu nome</label>
+						<input type="text" placeholder="Seu nome" id="newsletter-nome">
+					</div>
+					<div class="formfield">
+						<label for="newsletter-email">Seu melhor e-mail</label>
+						<input type="email" placeholder="Seu melhor e-mail" id="newsletter-email">
+					</div>
+					<input type="submit" value="Enviar" id="newsletter-btn-enviar">
+				</section>
+				<div class="termos-condicoes">
+					<input type="checkbox" name="#" id="newsletter-condicoes">
+					<label for="newsletter-condicoes" class="custom-checkmark"></label>
+					<label for="newsletter-condicoes">Li e estou ciente de tratamento dos meus dados pessoais e forneço meu
+						consentimento, conforme descrito na política de privacidade.</label>
+				</div>
+			</form>
+		</section>
+
 	</main>
-
 	<footer>
-		<div class="container">
-			<div class="row">
+		<section class="sobre-fanto">
+			<figure>
+				<a href="#home"><img src="./assets/img/logo-b.png" alt="Fanto ****"></a>
+			</figure>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quibusdam eaque mollitia, sunt a aliquid officiis,
+				accusantium adipisci neque consequuntur laudantium, qui itaque. Quas, sed ducimus? Nesciunt delectus amet hic!
+			</p>
 
-				<section class="sobre-fanto">
-					<figure>
-						<a href="#home"><img src="./assets/img/logo-b.png" alt="Fanto ****"></a>
-					</figure>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quibusdam eaque mollitia, sunt a aliquid officiis, accusantium adipisci neque consequuntur laudantium, qui itaque. Quas, sed ducimus? Nesciunt delectus amet hic!</p>
-	
-					<article class="redes-sociais">
-						<a href=""><i class="fa-brands fa-facebook"></i></a>
-						<a href=""><i class="fa-brands fa-instagram"></i></a>
-						<a href=""><i class="fa-brands fa-whatsapp"></i></a>
-						<a href=""><i class="fa-brands fa-telegram"></i></a>
-					</article>
-				</section>
+			<article class="redes-sociais">
+				<a href=""><i class="fa-brands fa-facebook"></i></a>
+				<a href=""><i class="fa-brands fa-instagram"></i></a>
+				<a href=""><i class="fa-brands fa-whatsapp"></i></a>
+				<a href=""><i class="fa-brands fa-telegram"></i></a>
+			</article>
+		</section>
 
-				<section class="menus">
-					<ul class="Categorias">
-						<h1>Fases da Vida</h1>
-						<li><a href="">Descansar</a></li>
-						<li><a href="">Explorar</a></li>
-						<li><a href="">Curtir</a></li>
-					</ul>
-					<ul class="institucional">
-						<h1>Posso ajudar?</h1>
-						<li><a href="#">Contato</a></li>
-						<li><a href="#">Política de Privacidade</a></li>
-						<li><a href="#">Política de Troca</a></li>
-					</ul>
-				</section>
+		<section class="menus">
+			<ul class="Categorias">
+				<h1>Fases da Vida</h1>
+				<li><a href="">Descansar</a></li>
+				<li><a href="">Explorar</a></li>
+				<li><a href="">Curtir</a></li>
+			</ul>
+			<ul class="institucional">
+				<h1>Posso ajudar?</h1>
+				<li><a href="#">Contato</a></li>
+				<li><a href="#">Política de Privacidade</a></li>
+				<li><a href="#">Política de Troca</a></li>
+			</ul>
+		</section>
 
-				<section class="pagamento-entrega">
-					<h1>Formas de pagamento</h1>
-					<h1>Formas de Entrega</h1>
-				</section>
+		<section class="pagamento-entrega">
+			<h1>Formas de pagamento</h1>
+			<h1>Formas de Entrega</h1>
+		</section>
 
-			</div>
-		</div>
 		<section class="direitos">Todos os direitos Reservados</section>
 	</footer>
 </body>

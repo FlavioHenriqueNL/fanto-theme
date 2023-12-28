@@ -1,0 +1,125 @@
+#newsletter{
+  margin: 50px 0;
+  padding: 48px 72px;
+  border: 2px solid #c0b1d2;
+  border-radius: 25px;
+  h1{
+    font-size: 29px;
+    font-weight: 500;
+    color: #6f00ff;
+    margin-bottom: 30px;
+  }
+  .formfield-row{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    .formfield{
+      display: flex;
+      flex: 1;
+    }
+    &#newsletter-campos{
+      margin-bottom: 35px;
+      label{
+        display: none;
+      }
+      input{
+        border: none;
+        border-radius: 5px;
+        background: #e3ddea;
+        color: #6f00ff;
+        height: 50px;
+        padding: 0 25px;
+        font-size: 16px;
+        font-weight: 700;
+        flex: 1;
+        &::placeholder{
+          color: #a994c1;
+          font-size: 18px;
+          line-height: 1px;
+          font-weight: 500;
+        }
+      }
+      #newsletter-btn-enviar{
+        border-radius: 5px;
+        background: #44009d;
+        color: #fffc00;
+        font-size: 18px;
+        font-weight: 500;
+        max-width: 168px !important;
+        cursor: pointer;
+        transition: background 0.25s;
+        &:hover{
+          background: lighten(#44009d, 15%);
+        }
+      }
+    }
+  }
+  .termos-condicoes{
+    position: relative;
+    display: flex;
+    align-items: center;
+    label{
+      margin-left: 25px;
+      font-size: 12px;
+      font-weight: 400;
+      color: #44009d;
+      cursor: pointer;
+    }
+    input{
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0;
+      &:checked{
+        ~ .custom-checkmark{
+          background-color: #44009d;
+          &:after{
+            display: block;
+          }
+        }
+      }
+    }
+    .custom-checkmark{
+      position: absolute;
+      margin: 0 !important;
+      top: 0;
+      left: 0;
+      height: 20px;
+      width: 20px;
+      background-color: #eff;
+      border-radius: 5px;
+      border: 1px solid #d1adff;
+      &:after{
+        content: "";
+        position: absolute;
+        display: none;
+        left: calc(50% - 4px);
+        top: calc(50% - 8px);
+        width: 5px;
+        height: 10px;
+        border: solid white;
+        border-width: 0 3px 3px 0;
+        transform: rotate(45deg);
+      }
+    }
+    &:hover{
+      input{
+        & ~ .custom-checkmark{
+          background-color: #44009d;
+        }
+      }
+    }
+
+  }
+@media (max-width: 992px) {
+  padding: 48px 64px;
+}
+@media(max-width: 768px){
+  padding: 48px;
+  #newsletter-btn-enviar{
+    min-width: 100%;
+  }
+}
+
+}

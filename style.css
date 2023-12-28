@@ -1,4 +1,132 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap");
+#newsletter {
+  margin: 50px 0;
+  padding: 48px 72px;
+  border: 2px solid #c0b1d2;
+  border-radius: 25px;
+}
+#newsletter h1 {
+  font-size: 29px;
+  font-weight: 500;
+  color: #6f00ff;
+  margin-bottom: 30px;
+}
+#newsletter .formfield-row {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+#newsletter .formfield-row .formfield {
+  display: flex;
+  flex: 1;
+}
+#newsletter .formfield-row#newsletter-campos {
+  margin-bottom: 35px;
+}
+#newsletter .formfield-row#newsletter-campos label {
+  display: none;
+}
+#newsletter .formfield-row#newsletter-campos input {
+  border: none;
+  border-radius: 5px;
+  background: #e3ddea;
+  color: #6f00ff;
+  height: 50px;
+  padding: 0 25px;
+  font-size: 16px;
+  font-weight: 700;
+  flex: 1;
+}
+#newsletter .formfield-row#newsletter-campos input::-moz-placeholder {
+  color: #a994c1;
+  font-size: 18px;
+  line-height: 1px;
+  font-weight: 500;
+}
+#newsletter .formfield-row#newsletter-campos input::placeholder {
+  color: #a994c1;
+  font-size: 18px;
+  line-height: 1px;
+  font-weight: 500;
+}
+#newsletter .formfield-row#newsletter-campos #newsletter-btn-enviar {
+  border-radius: 5px;
+  background: #44009d;
+  color: #fffc00;
+  font-size: 18px;
+  font-weight: 500;
+  max-width: 168px !important;
+  cursor: pointer;
+  transition: background 0.25s;
+}
+#newsletter .formfield-row#newsletter-campos #newsletter-btn-enviar:hover {
+  background: #6500ea;
+}
+#newsletter .termos-condicoes {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+#newsletter .termos-condicoes label {
+  margin-left: 25px;
+  font-size: 12px;
+  font-weight: 400;
+  color: #44009d;
+  cursor: pointer;
+}
+#newsletter .termos-condicoes input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+#newsletter .termos-condicoes input:checked ~ .custom-checkmark {
+  background-color: #44009d;
+}
+#newsletter .termos-condicoes input:checked ~ .custom-checkmark:after {
+  display: block;
+}
+#newsletter .termos-condicoes .custom-checkmark {
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eff;
+  border-radius: 5px;
+  border: 1px solid #d1adff;
+}
+#newsletter .termos-condicoes .custom-checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: calc(50% - 4px);
+  top: calc(50% - 8px);
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+#newsletter .termos-condicoes:hover input ~ .custom-checkmark {
+  background-color: #44009d;
+}
+@media (max-width: 992px) {
+  #newsletter {
+    padding: 48px 64px;
+  }
+}
+@media (max-width: 768px) {
+  #newsletter {
+    padding: 48px;
+  }
+  #newsletter #newsletter-btn-enviar {
+    min-width: 100%;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
