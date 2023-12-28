@@ -1,0 +1,275 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap");
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+}
+body {
+	font-family: "Poppins", sans-serif;
+}
+.container {
+	width: 100%;
+	max-width: 1140px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+header {
+	.barra-promocional {
+		background: #6f00ff;
+		text-align: center;
+		height: 80px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		ul {
+			display: flex;
+			gap: 20px;
+			li {
+				font-size: 20px;
+				color: #f6ff00;
+				margin-left: 20px;
+			}
+		}
+	}
+	nav {
+		display: flex;
+		align-items: center;
+		height: 150px;
+		-webkit-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.25);
+		-moz-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.25);
+		box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.25);
+		.navbar-container {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			.navbar-brand {
+				img {
+					width: 150px;
+				}
+			}
+
+			.navbar {
+				display: flex;
+				justify-content: center;
+				gap: 50px;
+				ul {
+					display: flex;
+					list-style: none;
+					gap: 20px;
+					li {
+						a {
+							font-size: 20px;
+							color: #1a1a1a;
+							font-weight: 700;
+						}
+					}
+				}
+			}
+
+			.menu-apoio-loja {
+				display: flex;
+				gap: 25px;
+				img {
+					width: 35px;
+					height: 35px;
+				}
+				#carrinho {
+					position: relative;
+					#qtd-icon {
+						position: absolute;
+						top: -10px;
+						left: -5px;
+						background: #6f00ff;
+						color: #fff;
+						font-size: 15px;
+						width: 25px;
+						height: 25px;
+						border-radius: 50%;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						font-weight: 700;
+					}
+				}
+			}
+		}
+	}
+}
+
+.secao-produtos {
+	margin-bottom: 50px;
+	.sub-titulo {
+		font-size: 22px;
+		font-weight: 500;
+		color: #6f00ff;
+	}
+	.titulo {
+		font-size: 40px;
+		font-weight: 900;
+		color: #1a1a1a;
+		margin-bottom: 50px;
+	}
+
+	.lista-produtos {
+		display: flex;
+		align-items: stretch;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		row-gap: 50px	;
+		
+		.produto {
+			width: 248px;
+			figure {
+				width: 248px;
+				height: 248px;
+				background: #6f00ff;
+				border-radius: 30px;
+				img {
+					border-radius: 25px;
+					width: 100%;
+					height: auto;
+				}
+			}
+
+			.nome {
+				font-size: 20px;
+				font-weight: 500;
+				color: #1a1a1a;
+				margin: 20px 0 10px;
+			}
+			.valor-avista {
+				display: block;
+				font-size: 30px;
+				font-weight: 700;
+				color: #6f00ff;
+			}
+			.valor-parcelado {
+				font-size: 20px;
+				font-weight: 400;
+				color: #1a1a1a;
+				
+			}
+			&:hover{
+				.nome{
+					font-weight: 700;
+				}
+				
+			}
+		}
+	}
+}
+
+main{
+	padding: 50px 0 !important;
+
+	#categorias{
+		.lista-categorias{
+			display: flex;
+			gap: 50px;
+			.categoria{
+				width: 100%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				height: 200px;
+				font-size: 38px;
+				color: #fff;
+				font-weight: 900;
+				border-radius: 25px;
+				transition: background 0.25s;
+				&:first-child{
+					background: #eba887;
+				}
+				&:nth-child(2){
+					background: #93c7ec;
+				}
+				&:nth-child(3){
+					background: #9cd7c0;
+				}
+				&:hover{
+					&:first-child{
+						background: darken(#eba887,15%);
+					}
+					&:nth-child(2){
+						background: darken(#93c7ec,15%);
+					}
+					&:nth-child(3){
+						background: darken(#9cd7c0,15%);
+					}
+					
+				}
+			}
+		}
+	}
+
+}
+
+footer{
+	background: #6f00ff;
+	.row{
+		padding: 50px 0;
+		display: grid;
+		justify-content: space-between;
+		grid-template-areas: 
+		"sobre-fanto menus" 
+		"sobre-fanto pagamento-entrega";
+	}
+	.sobre-fanto{
+		grid-area: sobre-fanto;
+		max-width: 300px;
+		figure{
+			margin-bottom: 15px;
+			img{
+				max-width: 250px;
+				width: 100%;
+				height: auto;
+			}
+		}
+		p{
+			font-size: 12px;
+			color: #fff;
+		}
+		.redes-sociais{
+			margin-top: 25px;
+			display: flex;
+			gap: 15px;
+			a{
+				i{
+					font-size: 25px;
+					color: #fff;
+				}
+			}
+		}
+	}
+	.menus{
+		grid-area: menus;
+		display: flex;
+		gap: 50px;
+		margin-bottom: 35px;
+		h1{
+			color: #fff;
+			margin-bottom: 25px;
+		}
+		ul{
+			list-style: none;
+			li{
+				a{
+					color: #fff;
+				}
+			}
+		}
+	}
+	.pagamento-entrega{
+		grid-area: pagamento-entrega;
+		h1{
+			color: #fff;
+		}
+	}
+	.direitos{
+		background: #1a1a1a;
+	}
+}
