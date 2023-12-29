@@ -1,0 +1,111 @@
+footer {
+  background: #6f00ff;
+
+  .menus {
+    display: flex;
+    padding: 90px 0;
+    gap: 50px;
+    flex-wrap: wrap;
+    article{
+      flex: 1;
+    }
+
+    h1 {
+      color: #fff;
+      margin-bottom: 25px;
+      font-size: 18px;
+    }
+    ul {
+      list-style: none;
+      li {
+        margin-bottom: 15px;
+        a {
+          color: #fff;
+          font-size: 16px;
+        }
+      }
+    }
+
+    .categorias{
+      ul{
+        li{
+          &:first-child{
+            margin-bottom: 30px;
+          }
+        }
+      }
+    }
+    .atendimento{
+      a{
+        display: flex;
+        align-items: center;
+        i{
+          font-size: 24px;
+          margin-right: 10px;
+        }
+      }
+    }
+
+    .fanto{
+      figure{
+        margin-bottom: 25px;
+        img{
+          width: 90px;
+        }
+      }
+      .whatsapp{
+        a{
+          i{
+            
+            font-size: 50px;
+            display: block;
+            color: #fff;
+          }
+          display: flex;
+          gap: 15px;
+          width: 250px;
+          height: 70px;
+          align-items: center;
+          justify-content: space-between;
+          background: #13bc56;
+          color: #4b0d79;
+          font-weight: 900;
+          line-height: 18px;
+          font-size: 13px;
+          padding: 0 25px;
+          border-radius: 10px;
+        }
+      }
+    }
+  }
+
+  #linha-separacao{
+    border-color: #5900cd;
+  }
+
+  .pagamento-seguranca {
+    padding: 90px 0;
+    .container{
+      display: flex;
+      gap: 30px;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    h1 {
+      color: #fff;
+    }
+  }
+
+  .direitos {
+    padding: 0 25px;
+    background: #44009d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 115px;
+    text-align: center;
+    font-size: 14px;
+    color: #fefefe;
+  }
+}

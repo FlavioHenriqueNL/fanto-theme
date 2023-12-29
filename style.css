@@ -1,4 +1,95 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap");
+footer {
+  background: #6f00ff;
+}
+footer .menus {
+  display: flex;
+  padding: 90px 0;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+footer .menus article {
+  flex: 1;
+}
+footer .menus h1 {
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 18px;
+}
+footer .menus ul {
+  list-style: none;
+}
+footer .menus ul li {
+  margin-bottom: 15px;
+}
+footer .menus ul li a {
+  color: #fff;
+  font-size: 16px;
+}
+footer .menus .categorias ul li:first-child {
+  margin-bottom: 30px;
+}
+footer .menus .atendimento a {
+  display: flex;
+  align-items: center;
+}
+footer .menus .atendimento a i {
+  font-size: 24px;
+  margin-right: 10px;
+}
+footer .menus .fanto figure {
+  margin-bottom: 25px;
+}
+footer .menus .fanto figure img {
+  width: 90px;
+}
+footer .menus .fanto .whatsapp a {
+  display: flex;
+  gap: 15px;
+  width: 250px;
+  height: 70px;
+  align-items: center;
+  justify-content: space-between;
+  background: #13bc56;
+  color: #4b0d79;
+  font-weight: 900;
+  line-height: 18px;
+  font-size: 13px;
+  padding: 0 25px;
+  border-radius: 10px;
+}
+footer .menus .fanto .whatsapp a i {
+  font-size: 50px;
+  display: block;
+  color: #fff;
+}
+footer #linha-separacao {
+  border-color: #5900cd;
+}
+footer .pagamento-seguranca {
+  padding: 90px 0;
+}
+footer .pagamento-seguranca .container {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .pagamento-seguranca h1 {
+  color: #fff;
+}
+footer .direitos {
+  padding: 0 25px;
+  background: #44009d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 115px;
+  text-align: center;
+  font-size: 14px;
+  color: #fefefe;
+}
+
 #newsletter {
   margin: 50px 0;
   padding: 48px 72px;
@@ -313,64 +404,4 @@ main #categorias .lista-categorias .categoria:hover:nth-child(2) {
 }
 main #categorias .lista-categorias .categoria:hover:nth-child(3) {
   background: #66c19d;
-}
-
-footer {
-  background: #6f00ff;
-}
-footer .row {
-  padding: 50px 0;
-  display: grid;
-  justify-content: space-between;
-  grid-template-areas: "sobre-fanto menus" "sobre-fanto pagamento-entrega";
-}
-footer .sobre-fanto {
-  grid-area: sobre-fanto;
-  max-width: 300px;
-}
-footer .sobre-fanto figure {
-  margin-bottom: 15px;
-}
-footer .sobre-fanto figure img {
-  max-width: 250px;
-  width: 100%;
-  height: auto;
-}
-footer .sobre-fanto p {
-  font-size: 12px;
-  color: #fff;
-}
-footer .sobre-fanto .redes-sociais {
-  margin-top: 25px;
-  display: flex;
-  gap: 15px;
-}
-footer .sobre-fanto .redes-sociais a i {
-  font-size: 25px;
-  color: #fff;
-}
-footer .menus {
-  grid-area: menus;
-  display: flex;
-  gap: 50px;
-  margin-bottom: 35px;
-}
-footer .menus h1 {
-  color: #fff;
-  margin-bottom: 25px;
-}
-footer .menus ul {
-  list-style: none;
-}
-footer .menus ul li a {
-  color: #fff;
-}
-footer .pagamento-entrega {
-  grid-area: pagamento-entrega;
-}
-footer .pagamento-entrega h1 {
-  color: #fff;
-}
-footer .direitos {
-  background: #1a1a1a;
 }/*# sourceMappingURL=style.css.map */
