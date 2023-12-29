@@ -244,13 +244,6 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-.container {
-  width: 100%;
-  max-width: 1140px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
 header .barra-promocional {
   background: #6f00ff;
   text-align: center;
@@ -416,4 +409,22 @@ main #categorias .lista-categorias .categoria:hover:nth-child(2) {
 }
 main #categorias .lista-categorias .categoria:hover:nth-child(3) {
   background: #66c19d;
+}
+@media (max-width: 1200px) {
+  main #categorias .lista-categorias {
+    gap: 30px;
+  }
+}
+@media (max-width: 992px) {
+  main #categorias .lista-categorias .categoria {
+    font-size: 32px;
+  }
+}
+@media (max-width: 768px) {
+  main #categorias .lista-categorias {
+    flex-direction: column;
+  }
+  main #categorias .lista-categorias .categoria {
+    height: 150px;
+  }
 }/*# sourceMappingURL=style.css.map */

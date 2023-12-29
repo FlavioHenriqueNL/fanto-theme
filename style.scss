@@ -13,12 +13,7 @@ a{
 body {
 	font-family: "Poppins", sans-serif;
 }
-.container {
-	width: 100%;
-	max-width: 1140px;
-	margin: 0 auto;
-	padding: 0 15px;
-}
+
 
 header {
 	.barra-promocional {
@@ -204,6 +199,20 @@ main{
 						background: darken(#9cd7c0,15%);
 					}
 					
+				}
+			}
+			@media(max-width: 1200px){
+				gap: 30px;
+			}
+			@media(max-width: 992px){
+				.categoria{
+					font-size: 32px;
+				}
+			}
+			@media(max-width: 768px){
+				flex-direction: column;
+				.categoria{
+					height: 150px;
 				}
 			}
 		}
