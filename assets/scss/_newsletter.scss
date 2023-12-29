@@ -1,13 +1,14 @@
 #newsletter{
   margin: 50px 0;
-  padding: 48px 72px;
-  border: 2px solid #c0b1d2;
+  padding: 56px 72px;
+  background-color: #ff6000;
+  border: 2px solid #ff8a44;
   border-radius: 25px;
   h1{
-    font-size: 29px;
+    font-size: 28px;
     font-weight: 500;
-    color: #6f00ff;
-    margin-bottom: 30px;
+    color: #fff;
+    margin-bottom: 10px;
   }
   .formfield-row{
     display: flex;
@@ -18,14 +19,13 @@
       flex: 1;
     }
     &#newsletter-campos{
-      margin-bottom: 35px;
       label{
         display: none;
       }
       input{
         border: none;
         border-radius: 5px;
-        background: #e3ddea;
+        background: #fff;
         color: #6f00ff;
         height: 50px;
         padding: 0 25px;
@@ -33,7 +33,7 @@
         font-weight: 700;
         flex: 1;
         &::placeholder{
-          color: #a994c1;
+          color: #ccc;
           font-size: 18px;
           line-height: 1px;
           font-weight: 500;
@@ -42,7 +42,7 @@
       #newsletter-btn-enviar{
         border-radius: 5px;
         background: #44009d;
-        color: #fffc00;
+        color: #fff;
         font-size: 18px;
         font-weight: 500;
         max-width: 168px !important;
@@ -58,11 +58,12 @@
     position: relative;
     display: flex;
     align-items: center;
+    margin-bottom: 30px;
     label{
-      margin-left: 25px;
+      margin-left: 35px;
       font-size: 12px;
       font-weight: 400;
-      color: #44009d;
+      color: #fff;
       cursor: pointer;
     }
     input{
@@ -83,13 +84,11 @@
     .custom-checkmark{
       position: absolute;
       margin: 0 !important;
-      top: 0;
-      left: 0;
       height: 20px;
       width: 20px;
-      background-color: #eff;
+      background-color: #ff6000;
       border-radius: 5px;
-      border: 1px solid #d1adff;
+      border: 1px solid #fff;
       &:after{
         content: "";
         position: absolute;
@@ -110,16 +109,23 @@
         }
       }
     }
-
   }
 @media (max-width: 992px) {
   padding: 48px 64px;
 }
 @media(max-width: 768px){
   padding: 48px;
+  h1{
+    font-size: 20px;
+    line-height: 24px;
+  }
   #newsletter-btn-enviar{
     min-width: 100%;
   }
+  .termos-condicoes{
+    font-size: 8px;
+  }
+  
 }
 
 }
